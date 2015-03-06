@@ -176,7 +176,7 @@ class Pretty_Pinterest_Pins extends WP_Widget{
 			}
 			if( $instance['show_follow_button'] ){
 			?>
-			<li class="pretty-pinterest-follow-me"><a href="http://pinterest.com/<?php echo $instance['pinterest_username'];?>/" target="_blank"><img src="http://passets-cdn.pinterest.com/images/follow-on-pinterest-button.png" width="156" height="26" alt="Follow Me on Pinterest" /></a></li>
+			<li class="pretty-pinterest-follow-me"><a href="https://pinterest.com/<?php echo $instance['pinterest_username'];?>/" target="_blank"><img src="https://passets-cdn.pinterest.com/images/follow-on-pinterest-button.png" width="156" height="26" alt="Follow Me on Pinterest" /></a></li>
 			<?php
 			}
 			?>		
