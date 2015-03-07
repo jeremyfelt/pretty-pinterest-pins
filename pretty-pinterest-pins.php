@@ -158,6 +158,3 @@ class Pretty_Pinterest_Pins extends WP_Widget{
 
 
 }
-add_filter( 'wp_feed_cache_transient_lifetime', create_function('$rssLife', 'return 500;') );
-
-?>
