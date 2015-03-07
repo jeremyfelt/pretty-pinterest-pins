@@ -102,60 +102,6 @@ class Pretty_Pinterest_Pins extends WP_Widget{
 		//fetch rss
 		$latest_pins = $this->pretty_pinterest_pins_get_rss_feed( $instance['pinterest_username'], $instance['number_of_pins_to_show'], $feed_url );
 		?>
-		<style>
-		ul#pretty-pinterest-pins-widget{
-			list-style-type: none;
-		}
-		
-		ul#pretty-pinterest-pins-widget li.pretty-pinterest-pin, ul#pretty-pinterest-pins-widget li.pretty-pinterest-follow-me{
-			position: relative;
-			margin: 0px 0px 10px 0px;
-			list-style-type: none;
-			list-style-image: none;
-			background: none;
-		}
-		
-		ul#pretty-pinterest-pins-widget li.pretty-pinterest-pin div.pretty-pinterest-image{
-			background-color: #FFFFFF;
-			box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-			font-size: 11px;
-			text-align: center;
-			margin: 0px;
-			max-width: 100%;
-			width: 150px;			
-		}		
-		
-		ul#pretty-pinterest-pins-widget li.pretty-pinterest-pin div.pretty-pinterest-image img{
-			width: 100%;
-			text-align: left;
-			margin: 0px;
-		}		
-		
-		ul#pretty-pinterest-pins-widget li.pretty-pinterest-pin div.pretty-pinterest-image a{
-			display: block;
-			background: none;
-			padding: 15px 15px 13px 15px;
-			margin: 0px;
-		}
-		
-		ul#pretty-pinterest-pins-widget li.pretty-pinterest-pin span{
-			display: block;
-			padding: 0px;
-			margin: 0px;
-			text-align: left;
-			line-height: 16px;
-			background-color: #F2F0F0;
-		}
-		
-		ul#pretty-pinterest-pins-widget li.pretty-pinterest-pin span p{
-			padding: 4px;
-			margin: 0px;
-			text-align: center;
-			line-height: 14px;
-			background-color: #F2F0F0;
-			color: #333;
-		}
-		</style>		
 		<ul id="pretty-pinterest-pins-widget">			
 		<?php 
 			if(!empty( $latest_pins ) ){
